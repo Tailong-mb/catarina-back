@@ -5,16 +5,16 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'template-folio',
+  title: 'catarina-folio',
 
-  projectId: 'xgm0da5z',
+  projectId: 'chuc2qn9',
   dataset: 'production',
 
   plugins: [
     structureTool({
       structure: (S) =>
         S.list()
-          .title('Folio Template')
+          .title('Catarina Folio')
           .items([
             // Global Configuration
             S.listItem()

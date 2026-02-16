@@ -2,7 +2,7 @@ import {defineCliConfig} from 'sanity/cli'
 
 export default defineCliConfig({
   api: {
-    projectId: 'xgm0da5z',
+    projectId: 'chuc2qn9',
     dataset: 'production',
   },
   /**
@@ -10,5 +10,5 @@ export default defineCliConfig({
    * Learn more at https://www.sanity.io/docs/cli#auto-updates
    */
   autoUpdates: true,
-  studioHost: 'folio-template',
+  studioHost: 'catarina-folio',
 })
