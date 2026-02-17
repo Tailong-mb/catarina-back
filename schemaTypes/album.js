@@ -112,6 +112,12 @@ export default {
       ],
       validation: (Rule) => Rule.required().min(1),
     },
+    {
+      name: 'seo',
+      title: 'SEO',
+      type: 'seo',
+      description: 'Paramètres SEO spécifiques pour cet album',
+    },
   ],
   preview: {
     select: {

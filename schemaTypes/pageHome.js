@@ -23,6 +23,12 @@ export default {
       initialValue: 'View',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'seo',
+      title: 'SEO',
+      type: 'seo',
+      description: 'Paramètres SEO spécifiques pour la page d\'accueil',
+    },
   ],
   preview: {
     select: {

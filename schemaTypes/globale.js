@@ -39,6 +39,57 @@ export default {
       type: 'email',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'siteUrl',
+      title: 'Site URL',
+      type: 'url',
+      description: 'URL de base du site (ex: https://catarina.com)',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'defaultSeo',
+      title: 'SEO par défaut',
+      type: 'seo',
+      description: 'Paramètres SEO par défaut pour toutes les pages',
+    },
+    {
+      name: 'structuredData',
+      title: 'Données structurées',
+      type: 'object',
+      fields: [
+        {
+          name: 'personName',
+          title: 'Nom (Person)',
+          type: 'string',
+          initialValue: 'Catarina',
+        },
+        {
+          name: 'jobTitle',
+          title: 'Titre professionnel',
+          type: 'string',
+          initialValue: 'Photographe Professionnelle',
+        },
+        {
+          name: 'addressLocality',
+          title: 'Ville',
+          type: 'string',
+          initialValue: 'Paris',
+        },
+        {
+          name: 'addressCountry',
+          title: 'Pays',
+          type: 'string',
+          initialValue: 'FR',
+        },
+        {
+          name: 'sameAs',
+          title: 'Réseaux sociaux',
+          type: 'array',
+          of: [{ type: 'url' }],
+          description: 'Liens vers les réseaux sociaux (Instagram, Facebook, etc.)',
+        },
+      ],
+    },
   ],
   preview: {
     select: {

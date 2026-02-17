@@ -16,6 +16,12 @@ export default {
       validation: (Rule) => Rule.max(8),
       description: 'Select albums to display in the playground (maximum 8)',
     },
+    {
+      name: 'seo',
+      title: 'SEO',
+      type: 'seo',
+      description: 'Paramètres SEO spécifiques pour la page Playground',
+    },
   ],
   preview: {
     select: {

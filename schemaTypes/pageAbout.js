@@ -59,6 +59,12 @@ export default {
       ],
       description: 'Images for trail effect',
     },
+    {
+      name: 'seo',
+      title: 'SEO',
+      type: 'seo',
+      description: 'Paramètres SEO spécifiques pour la page About',
+    },
   ],
   preview: {
     select: {
